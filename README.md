@@ -1,0 +1,4 @@
+# Théo LESAGE
+### Étudiant & développeur
+
+Étudiant en digital, je suis passionné par le développement web. Je suis un mordu de tech depuis tout petit. Aujourd'hui, je suis en Bachelor 2 Web et Multimédia à MyDigitalSchool, où j'apprends à être un artisan du web de demain. À travers les trois axes d'apprentissage que sont le marketing, la communication et le développement web, nous sommes formés à être des profils résilients et pluri compétents. Ma spécialité : le développement. Ayant eu l'occasion de créer une boutique en ligne pour un concours de chant, le site web d'une association, et divers autres projets web, j'aime développer des solutions efficaces et adaptées à la problématique.<br>Mes compétences se répartissent équitablement entre le front et le back. Vous pourrez également trouver de l'IoT et de l'embarqué dans ma caisse à outils. Les réseaux et l'administration système sont deux passions connexes qui finissent de remplir ma toolbox.
