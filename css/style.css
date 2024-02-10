@@ -212,7 +212,7 @@ textarea{
   
 }
 
-.section-title{
+#contact .section-title{
   font-size: 3rem;
   font-weight: 900;
   color: #fff;
@@ -223,4 +223,59 @@ button{
   background-color: var(--blue);
   color: #fff;
   cursor: pointer;
+}
+
+@media screen and (max-width: 769px) {
+  .main-site-title{
+    font-size: 4em;
+  }
+  .hero-baseline{
+    font-size: 1.1em;
+  }
+  section{
+    padding-inline: 1.5rem;
+  }
+  section#hero{
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    align-items: flex-end;
+  }
+  .btn{
+    font-size: .8em;
+    width: 100%;
+  }
+
+  #contact .section-title{
+    font-size: var(--med-text);
+  }
+
+  .row{
+    grid-auto-flow: row;
+    grid-auto-rows: auto;
+  }
+
+  .row.skills-description{
+    margin-top: 1rem;
+  }
+
+  #hero .flex-container{
+    width: 100%;
+    justify-content: space-between;
+    align-items: unset;
+  }
+
+  .skillset-banner{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .skillset-banner img {
+    max-width: 75px;
+  }
+
+  form{
+    padding: .7rem;
+    gap: .5rem;
+  }
 }
