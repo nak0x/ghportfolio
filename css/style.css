@@ -1,0 +1,226 @@
+/* Main stylesheet for my portfolio */
+
+/* Vars & colors */
+
+:root {
+  --yellow: #fee440;
+  --pink: #f15bb5;
+  --purple: #9b5de5;
+  --blue: #00bbf9;
+  --green: #00f5d4;
+  --background: #fefefe;
+  --text: #212121;
+
+  --side-spacing: 5rem;
+  --section-gutter: 1rem;
+  --content-max-width: 1440px;
+
+  --lrg-title: 10em;
+  --med-title: 5em;
+  --sma-title: 4em;
+  --lrg-text: 3em;
+  --med-text: 2em;
+  --sma-text: 1.05em;
+}
+
+*,
+::after,
+::before {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: var(--sma-text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Main ui components */
+
+.btn {
+  --color: var(--blue);
+  padding: 0.5em 1.35em;
+  border: 2px solid var(--color);
+  background-color: var(--color);
+  color: var(--background);
+  --animation-duration: 300ms;
+  transition: background-color var(--animation-duration) ease,
+    color var(--animation-duration) ease,
+    border-color var(--animation-duration) ease;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn:hover {
+  --color: var(--purple);
+  color: var(--background);
+}
+
+.btn.secondary {
+  background-color: transparent;
+  color: var(--color);
+}
+
+.btn i {
+  background-color: transparent;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: var(--blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--background);
+  border: solid 3px var(--blue);
+  border-radius: 10px;
+}
+
+/* Actual style */
+
+:root{
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: monospace;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  padding: var(--section-gutter) var(--side-spacing);
+  max-width: var(--content-max-width);
+}
+section#hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-site-title {
+  font-size: var(--lrg-title);
+}
+
+.hero-baseline {
+  font-size: var(--med-text);
+  opacity: 50%;
+}
+
+.skillset-banner {
+  display: grid;
+  grid-auto-columns: 1fr;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  grid-auto-flow: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.skillset-banner img {
+  width: 100%;
+}
+
+.section-title {
+  font-size: var(--med-text);
+  margin-bottom: 2rem;
+}
+
+.row{
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 2rem;
+}
+
+.col{
+  width: 100%;
+}
+
+.presentation-image{
+  width: 100%;
+}
+
+.skills-description{
+  margin-top: 5rem;
+}
+
+#contact{
+  background-image: url('../image/valentin-antonini-Irat1P-TrSQ-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  max-width: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form{
+  padding: 2rem;
+  background-color: #fff3;
+  backdrop-filter: blur(15px);
+  border: 2px solid #fff7;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: calc(800px + 4rem);
+  justify-content: center;
+}
+
+input, textarea{
+  padding: .5rem;
+  background-color: #fffb;
+  font-size: 1.1em;
+  font-family: monospace;
+  width: 100%;
+  max-width: 800px;
+  min-width: 150px;
+}
+
+textarea{
+
+  height: 300px;
+  max-height: 400px;
+  
+}
+
+.section-title{
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+button{
+  padding: .7rem 5rem;
+  background-color: var(--blue);
+  color: #fff;
+  cursor: pointer;
+}
